@@ -14,7 +14,6 @@ export default function Question() {
   const [index, setIndex] = useState(0)
   const [questions, _setQuestions] = useRecoilState(questionsState)
   const [_selectedOption, setSelectedOption] = useRecoilState(selectedOptionState)
-  const [] = useState()
   const [results, setResults] = useRecoilState(resultsState)
 
   if (index > 4) {
