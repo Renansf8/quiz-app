@@ -1,0 +1,28 @@
+@use "../styles/variables.module.scss" as s;
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: s.$base-color;
+  flex-direction: column;
+  padding: 80px 80px 0 80px;
+  overflow-y: auto;
+}
+
+.title {
+  color: s.$secondary-color;
+  font-size: 32px;
+  height: 10%;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin-top: 64px;
+}
+

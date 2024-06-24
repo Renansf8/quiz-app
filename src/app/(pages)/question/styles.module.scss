@@ -1,0 +1,56 @@
+@use "../../../styles/variables.module.scss" as s;
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: s.$base-color;
+  flex-direction: column;
+  padding: 80px;
+}
+
+.questionContainer {
+  background-color: s.$primary-color;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 10px 5px 5px rgb(173, 173, 173);
+  align-items: center;
+  width: 600px;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: s.$secondary-color;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  color: s.$secondary-color;
+  margin-bottom: 40px;
+}
+
+.question {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: s.$base-color;
+  color: s.$secondary-color;
+  margin-top: 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #c6c6c6;
+  }
+}

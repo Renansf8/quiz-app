@@ -1,0 +1,62 @@
+@use "../../styles/variables.module.scss" as s;
+
+.quizContainer {
+  background-color: s.$primary-color;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 10px 5px 5px rgb(173, 173, 173);
+  gap: 32px;
+  align-items: center;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.inputTitle {
+  color: s.$secondary-color;
+  font-size: 18px;
+  width: 18%;
+  text-align: right;
+}
+
+.input {
+  width: 70%;
+  background-color: s.$base-color;
+  border-radius: 4px;
+}
+
+.selectInput {
+  width: 70%;
+  background-color: s.$base-color;
+  border-radius: 4px;
+}
+
+.button {
+  width: 40%;
+  background-color: #2d8d2c9c;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #20641f9c;
+  }
+}
+
+.alert {
+  width: 55%;
+  background-color: #50a44f9c;
+  color: s.$secondary-color;
+  border-radius: 8px;
+
+  svg {
+    color: s.$secondary-color;
+  }
+}
